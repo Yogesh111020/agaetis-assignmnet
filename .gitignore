@@ -1,0 +1,55 @@
+# Dependencies
+**/node_modules/
+**/vendor/
+
+# Environment files and local credentials
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+**/auth.json
+**/*.key
+**/*.pem
+
+# Frontend builds and development markers
+**/dist/
+**/public/build/
+**/public/hot
+**/public/storage
+
+# Laravel runtime files; retain directory placeholder .gitignore files
+employee-portal-api/bootstrap/cache/*
+!employee-portal-api/bootstrap/cache/.gitignore
+employee-portal-api/storage/**
+!employee-portal-api/storage/**/
+!employee-portal-api/storage/**/.gitignore
+
+# Local databases and database backups
+**/*.sqlite
+**/*.sqlite-*
+**/*.sqlite3
+**/*.db
+**/*.sql
+**/*.sql.gz
+
+# Logs, test output and caches
+**/*.log
+**/.phpunit.cache/
+**/.phpunit.result.cache
+**/coverage/
+**/.vite/
+**/*.tsbuildinfo
+**/.phpactor.json
+
+# Local tools and editor settings
+**/.impeccable/
+**/.idea/
+**/.vscode/
+**/.fleet/
+**/.nova/
+**/.zed/
+**/.DS_Store
+**/Thumbs.db
+**/*~
+
+# Dependency lockfiles and environment examples are intentionally committed.
