@@ -29,7 +29,6 @@ are required for PUT/PATCH. Invalid data returns 422; missing records return 404
 Responses include the role relationship. Pagination serial number: from + rowIndex.
 
 Seed dropdown: php artisan db:seed --class=RoleSeeder
-Tests: php artisan test (isolated in-memory SQLite).
 Login, logout and current-user routes have been removed.
 
 Employee deletion is a soft delete: deleted_at is set and the row is retained.

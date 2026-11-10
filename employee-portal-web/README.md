@@ -135,5 +135,5 @@ and configure Laravel FRONTEND_URL for the hosted origin.
 - 404 on actions: refresh the directory; the record may be deleted or its route_key changed.
 - Port 5173 occupied: stop the other server or intentionally change both Vite's port and Laravel's allowed origin.
 
-Build verification: npm run build. Backend automated tests: php artisan test in
-the API folder.
+Build verification: npm run build. Verify backend requests using the Postman
+examples in the API README.

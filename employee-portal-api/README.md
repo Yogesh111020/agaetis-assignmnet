@@ -7,7 +7,7 @@ No login, token, session cookie or CSRF setup is required. Anyone with API acces
 ## Requirements
 
 - PHP 8.2+ and Composer 2; installed dependencies may require a higher PHP version. Run `composer check-platform-reqs` after installation.
-- PHP extensions required by Composer, including PDO MySQL for MySQL and PDO SQLite for tests.
+- PHP extensions required by Composer, including PDO MySQL for MySQL.
 - Running MySQL/MariaDB server and an empty database for a new installation.
 - Node.js is not needed to serve this API; frontend dependencies belong in the React folder.
 
@@ -241,14 +241,13 @@ the employee's raw role_id and password are hidden.
   Changing the salt, or APP_KEY when it is the fallback, changes all route keys.
 - Hashids obscure identifiers; they do not encrypt records or restrict access.
 
-## Tests and troubleshooting
+## Troubleshooting
 
 ```bash
-php artisan test
 php artisan route:list --path=api
 ```
 
-Tests use an isolated SQLite in-memory database, not your MySQL records.
+Automated test cases are not included. Use the Postman steps above to verify APIs.
 
 | Problem | Check |
 | --- | --- |
